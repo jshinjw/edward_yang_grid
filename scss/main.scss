@@ -8,13 +8,15 @@ body {
   font-family: 'DM Sans', sans-serif;
   line-height: 1.6;
   background: #333;
+  overflow: hidden;
 }
 
 .container {
-  max-width: 1280px;
-  max-height: 100vh;
-  padding: 0 1.5rem 0 1.5rem;
-  margin: auto;
+  max-width: 1100px;
+  height: 100%;
+  // padding: 0 1.5rem 0 1.5rem;
+  // padding: 1rem;
+  margin: 0 auto;
   overflow: hidden;
 }
 
@@ -22,7 +24,8 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1rem;
-  padding-top: 1rem;
+  // padding-top: 1rem;
+  padding: 2.5rem;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -87,3 +90,14 @@ body {
     transition: opacity 250ms cubic-bezier(0.2, 1, 0.2, 1);
   }
 }
+
+// @media (max-width: 1000px) {
+//   .item-text-title {
+//     font-size: 0.8rem;
+//   }
+// }
+// @media (max-width: 500px) {
+//   .item-text-title {
+//     font-size: 0.6rem;
+//   }
+// }
